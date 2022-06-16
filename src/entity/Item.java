@@ -6,6 +6,9 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @AllArgsConstructor
@@ -18,5 +21,8 @@ public class Item {
     private String packSize;
     private double unitPrice;
     private int qtyOnHand;
+
+    @OneToMany(mappedBy = "item")
+    List<OrderDetails> ordersList=new ArrayList<>();
 
 }

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 @AllArgsConstructor
@@ -14,9 +15,11 @@ import javax.persistence.Id;
 public class OrderDetails {
 
     @Id
-    private int orderDetailId;
+    private String orderDetailId;
 
     private int orderQty;
     private double discount;
 
+    @ManyToOne
+    private Item item;
 }
