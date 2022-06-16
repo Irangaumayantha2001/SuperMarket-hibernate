@@ -6,8 +6,10 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import java.time.LocalDate;
 import java.time.LocalTime;
+
 
 @Entity
 @AllArgsConstructor
@@ -18,9 +20,12 @@ public class Orders {
     @Id
     private String orderId;
 
-    private LocalDate orderDate;
-    private LocalTime orderTime;
+    private String orderDate;
+    private String orderTime;
     private double cost;
+
+    @ManyToOne
+    private Customer customer;
 
 
 }
