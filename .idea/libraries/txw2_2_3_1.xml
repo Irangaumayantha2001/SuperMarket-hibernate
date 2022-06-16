@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="txw2-2.3.1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/libry/txw2-2.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/stax-ex-1.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/jboss-transaction-api_1.2_spec-1.1.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/jboss-logging-3.4.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/jaxb-runtime-2.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/jaxb-api-2.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/javax.persistence-api-2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/javax.activation-api-1.2.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/jandex-2.2.3.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/istack-commons-runtime-3.0.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/hibernate-core-5.6.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/hibernate-commons-annotations-5.1.2.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/FastInfoset-1.2.15.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/classmate-1.5.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/byte-buddy-1.11.20.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/libry/antlr-2.7.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/src" />
+    </SOURCES>
+  </library>
+</component>
