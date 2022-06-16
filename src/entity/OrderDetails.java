@@ -22,4 +22,7 @@ public class OrderDetails {
 
     @ManyToOne
     private Item item;
+
+    @ManyToOne
+    private Orders order;
 }

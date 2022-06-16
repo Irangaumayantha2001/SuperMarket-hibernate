@@ -70,6 +70,27 @@ public class Appinitializer  {
         i1.setOrdersList(ordersList);*/
 
 
+        Orders o1= new Orders();
+        o1.setOrderId("OD001");
+        o1.setOrderDate("2022-06-06");
+        o1.setOrderTime("07:08:20");
+
+
+        OrderDetails od1 = new OrderDetails();
+        od1.setOrderDetailId("OD001");
+        od1.setOrderQty(1);
+        od1.setDiscount(50.00);
+
+        OrderDetails od2 = new OrderDetails();
+        od2.setOrderDetailId("OD002");
+        od2.setOrderQty(1);
+        od2.setDiscount(50.00);
+
+        List<OrderDetails> itemList = new ArrayList<>();
+        itemList.add(od1);
+        itemList.add(od2);
+        o1.setItemList(itemList);
+
 
         Session session = FactoryConfiguration.getInstance().getSession();
 
@@ -83,6 +104,10 @@ public class Appinitializer  {
 //        session.save(i1);
 //        session.save(od1);
 //        session.save(od2);
+
+            session.save(o1);
+            session.save(od1);
+            session.save(od2);
 
         transaction.commit();
         session.close();
